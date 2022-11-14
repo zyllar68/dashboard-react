@@ -1,9 +1,13 @@
-import Head from "@/components/Header";
+import Header from "@components/Header";
+import TopNav from "@components/TopNav";
+import HeroBanner from "@components/Hero";
 
 export default function Home() {
   return (
     <div>
-      <main>yeah</main>
+      <Header />
+      <TopNav />
+      <HeroBanner />
     </div>
   );
 }
