@@ -93,4 +93,10 @@
       margin-bottom: 2.25rem;
     }
   }
+
+  &__cta {
+    @include breakpoint-down(medium) {
+      margin-bottom: 5rem;
+    }
+  }
 }

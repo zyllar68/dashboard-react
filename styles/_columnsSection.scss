@@ -1,0 +1,29 @@
+.FourColumnsSection {
+  padding-top: 7rem;
+  text-align: center;
+
+  &.bg-gray {
+    background-color: $lightGrayish;
+  }
+
+  @include breakpoint-up(large) {
+    text-align: left;
+  }
+  h1 {
+    font-weight: 300;
+    font-size: 2.31rem;
+    color: $darkBlue;
+    line-height: 1.15;
+    margin-bottom: 1.125rem;
+  }
+  &__subTitle {
+    line-height: 1.5;
+    margin-bottom: 2.8125rem;
+  }
+
+  p {
+    @include breakpoint-up(large) {
+      max-width: 650px;
+    }
+  }
+}

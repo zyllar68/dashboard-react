@@ -1,0 +1,21 @@
+.infoItem {
+  > img {
+    margin-bottom: 1.25rem;
+    @include breakpoint-up(large) {
+      margin-bottom: 2.8125rem;
+    }
+  }
+  > h2 {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: $font-med;
+    margin-bottom: 0.5625rem;
+  }
+
+  > p {
+    font-size: $font-sm;
+    @include breakpoint-up(large) {
+      text-align: justify;
+    }
+  }
+}

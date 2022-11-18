@@ -1,0 +1,46 @@
+.CardArticle {
+  width: 100%;
+  background-color: $white;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  border-radius: 5px;
+
+  @include breakpoint-down(medium) {
+    margin-bottom: 1.3125rem;
+  }
+
+  > img {
+    height: 200px;
+    width: 100%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    image-rendering: optimizeQuality;
+  }
+
+  &__wrapper {
+    padding: 0.9375rem 0.9375rem 0.625rem 0.9375rem;
+  }
+
+  &__author {
+    text-transform: capitalize;
+    font-size: $font-xs;
+  }
+
+  &__title {
+    font-weight: 300;
+    color: $darkBlue;
+    font-size: $font-sm;
+  }
+
+  &__content {
+    font-size: $font-sm;
+    max-height: 7.5rem;
+    // text-overflow: ellipsis;
+    // overflow: hidden;
+    text-align: left;
+    // white-space: nowrap;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+}
