@@ -115,7 +115,7 @@ button,
 .grid {
   --grid-layout-gap: 10px;
   --grid-column-count: 5;
-  --grid-item--min-width: 200px;
+  --grid-item--min-width: 20 0px;
 
   --gap-count: calc(var(--grid-column-count) - 1);
   --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
