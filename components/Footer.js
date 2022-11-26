@@ -10,27 +10,29 @@ import intLogo from "@assets/icon-instagram.svg";
 const Footer = () => {
   return (
     <div className='footer'>
-      <div className='container'>
+      <div className='container container--pall'>
         <div className='footer__items'>
           <div className='footer__left'>
-            <Image src={logo} alt='logo' />
-            <ul className='footer__socmed'>
-              <li>
-                <Image src={fbLogo} alt='facebook logo' />
-              </li>
-              <li>
-                <Image src={ytLogo} alt='youtube logo' />
-              </li>
-              <li>
-                <Image src={twitLogo} alt='facebook logo' />
-              </li>
-              <li>
-                <Image src={pintLogo} alt='facebook logo' />
-              </li>
-              <li>
-                <Image src={intLogo} alt='facebook logo' />
-              </li>
-            </ul>
+            <div className='footer__socmedWrapper'>
+              <Image src={logo} alt='logo' />
+              <ul className='footer__socmed'>
+                <li>
+                  <Image src={fbLogo} alt='facebook logo' />
+                </li>
+                <li>
+                  <Image src={ytLogo} alt='youtube logo' />
+                </li>
+                <li>
+                  <Image src={twitLogo} alt='facebook logo' />
+                </li>
+                <li>
+                  <Image src={pintLogo} alt='facebook logo' />
+                </li>
+                <li>
+                  <Image src={intLogo} alt='facebook logo' />
+                </li>
+              </ul>
+            </div>
             <ul className='footer__menu'>
               <li>About Us</li>
               <li>Contact</li>
@@ -39,6 +41,8 @@ const Footer = () => {
               <li>Support</li>
               <li>Privacy policy</li>
             </ul>
+          </div>
+          <div className='footer__right'>
             <div className='footer__cta'>
               <button>Request Invite</button>
             </div>
@@ -46,7 +50,6 @@ const Footer = () => {
               &copy; Easybank. All Rights Reserved
             </div>
           </div>
-          <div className='item__right'></div>
         </div>
       </div>
     </div>

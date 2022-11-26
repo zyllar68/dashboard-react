@@ -4,16 +4,41 @@
   &__items {
     padding-top: 2.1875rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
   }
 
   &__left {
     text-align: center;
+    @include breakpoint-up(large) {
+      display: flex;
+      text-align: left;
+    }
+  }
+
+  &__right {
+    text-align: center;
+  }
+
+  &__socmedWrapper {
+    @include breakpoint-up(large) {
+      margin-right: 8.125rem;
+    }
   }
 
   &__socmed {
     margin-top: 1.75rem;
     display: flex;
+    justify-content: center;
+
+    @include breakpoint-up(large) {
+      margin-right: 1rem;
+    }
 
     > li {
       &:not(:last-child) {
@@ -23,6 +48,11 @@
   }
 
   &__menu {
+    @include breakpoint-up(large) {
+      columns: 2;
+      margin: 0;
+      gap: 5rem;
+    }
     > li {
       color: $white;
       font-size: $font-xs;
