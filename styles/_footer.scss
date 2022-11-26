@@ -1,0 +1,44 @@
+.footer {
+  background-color: $darkBlue;
+
+  &__items {
+    padding-top: 2.1875rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__left {
+    text-align: center;
+  }
+
+  &__socmed {
+    margin-top: 1.75rem;
+    display: flex;
+
+    > li {
+      &:not(:last-child) {
+        padding-right: 0.875rem;
+      }
+    }
+  }
+
+  &__menu {
+    > li {
+      color: $white;
+      font-size: $font-xs;
+      font-weight: 600;
+      &:not(:last-child) {
+        padding-bottom: 1.125rem;
+      }
+    }
+  }
+
+  &__cta {
+    padding-top: 1.3125rem;
+    padding-bottom: 1.75rem;
+  }
+
+  &__copyright {
+    padding-bottom: 2.75rem;
+  }
+}

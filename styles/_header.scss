@@ -24,6 +24,7 @@
     bottom: 0;
     left: 0;
     background-image: linear-gradient($darkBlue, transparent);
+    z-index: 2;
   }
 
   nav {
@@ -33,6 +34,7 @@
     background-color: $white;
     padding-top: 1.0625rem;
     padding-bottom: 1.0625rem;
+    z-index: 1000;
   }
 
   &__logo {
@@ -67,6 +69,7 @@
     margin-top: 1.5rem;
     padding: 1.625rem;
     border-radius: 5px;
+    z-index: 10;
 
     a {
       display: block;

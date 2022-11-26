@@ -4,6 +4,7 @@ import HeroBanner from "@components/Hero";
 import ColumnsSection from "@components/ColumnsSection";
 import InfoItem from "@components/_subComponents/infoItem";
 import CardArticle from "@components/_subComponents/CardArticle";
+import Footer from "@components/Footer";
 
 // images
 import onlineBanking from "@assets/icon-online.svg";
@@ -108,6 +109,7 @@ export default function Home() {
           </div>
         ))}
       </ColumnsSection>
+      <Footer />
     </div>
   );
 }

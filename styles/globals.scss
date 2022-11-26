@@ -34,6 +34,11 @@ h3 {
   margin-top: 0;
 }
 
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
 a,
 a:visited,
 a:hover {
@@ -115,7 +120,7 @@ button,
 .grid {
   --grid-layout-gap: 10px;
   --grid-column-count: 5;
-  --grid-item--min-width: 20 0px;
+  --grid-item--min-width: 200px;
 
   --gap-count: calc(var(--grid-column-count) - 1);
   --total-gap-width: calc(var(--gap-count) * var(--grid-layout-gap));
